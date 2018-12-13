@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Exo2 {
+public class Ex2 {
     public static double average(String fileName) {
         ArrayList<Integer> array = new ArrayList<>();
         Integer sum = 0;

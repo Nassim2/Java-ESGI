@@ -1,8 +1,6 @@
 package Exercice3;
 
-import java.util.ArrayList;
-
-public class Exo3 {
+public class Ex3 {
 
     public static double average(String[] nbs) {
         Integer sum = 0;
