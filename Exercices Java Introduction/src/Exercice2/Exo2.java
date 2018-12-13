@@ -44,8 +44,8 @@ public class Exo2 {
     }
 
     public static void main(String[] args) {
-        double average = average("C:\\Projects\\Exercice 2\\src\\Exo2\\test.txt");
-        double getMark = getMarkEmail("C:\\\\Projects\\\\Exercice 2\\\\src\\\\Exo2\\\\test.txt", "test.test@gmail.com");
+        double average = average("test.txt");
+        double getMark = getMarkEmail("test.txt", "test.test@gmail.com");
         System.out.println(average);
         System.out.println(getMark);
     }
