@@ -27,7 +27,6 @@ public class Exo2 {
     }
 
     public static double getMarkEmail(String fileName, String Email) {
-        BufferedReader reader;
         Integer res = 0;
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
