@@ -4,21 +4,22 @@ import java.util.ArrayList;
 
 public class Exo3 {
 
-    public static double average(String nbs) {
+    public static double average(String[] nbs) {
         Integer sum = 0;
-        char[] nb_arr = nbs.toCharArray();
         try {
-            for (int i = 0; i < nb_arr.length; i++) {
-                sum += Character.getNumericValue(nb_arr[i]);
+            for (String nb : nbs) {
+                sum += Integer.parseInt(nb);
             }
-            return sum.doubleValue() / nb_arr.length;
+            return sum.doubleValue() / nbs.length;
         } catch (NumberFormatException nfe) {
             System.out.println("Values are incorrect");
+            System.out.println(nfe);
             return 0;
         }
     }
 
     public static void main(String[] args) {
-        average("1256783920495");
+        String[] array = {"13", "146", "b", "t" , "67"};
+        System.out.println(average(array));
     }
 }
