@@ -6,7 +6,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Ex2 {
+public class ExTwo {
+    //Function to get average of all grades from the file
     public static double average(String fileName) {
         ArrayList<Integer> array = new ArrayList<>();
         Integer sum = 0;
@@ -15,17 +16,19 @@ public class Ex2 {
             while ((line = br.readLine()) != null) {
                 String[] res = line.split(":");
                 array.add(Integer.parseInt(res[1]));
-            }
-            for (Integer mark : array) {
-                sum += mark;
-            }
-            return sum.doubleValue() / array.size();
-        } catch (IOException e) {
+        }
+        for (Integer mark : array) {
+            sum += mark;
+        }
+        br.close();
+        return sum.doubleValue() / array.size();
+    } catch (IOException e) {
             e.printStackTrace();
         }
         return 0;
     }
 
+    //Function to get the marks from file from an email
     public static double getMarkEmail(String fileName, String Email) {
         Integer res = 0;
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {

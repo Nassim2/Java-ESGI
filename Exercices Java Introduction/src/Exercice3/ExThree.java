@@ -1,7 +1,8 @@
 package Exercice3;
 
-public class Ex3 {
+public class ExThree {
 
+    //Function to get average of the string array
     public static double average(String[] nbs) {
         Integer sum = 0;
         try {

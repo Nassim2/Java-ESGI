@@ -1,4 +1,4 @@
 package Exercice4;
 
-public class Ex4 {
+public class ExFour {
 }
