@@ -15,10 +15,10 @@ public class Application {
         }
     }
 
-    public float average(int position) {
-        float avg = 0;
+    public double average(int position) {
+        double avg = 0;
         int count = 0;
-        float res = 0;
+        double res = 0;
         while (count < marks.get(position).size()){
             avg += marks.get(position).get(count).getValue();
             count++;
@@ -36,8 +36,8 @@ public class Application {
         return 0;
     }
 
-    public float [] avgs() {
-        float[] avgs = new float[marks.size()];
+    public double [] avgs() {
+        double[] avgs = new double[marks.size()];
         for (int i = 0; i < marks.size(); i++) {
             avgs[i] = average(i);
         }
